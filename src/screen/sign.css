@@ -30,6 +30,13 @@
     margin-bottom: 6px;
     color: black;
 }
+.signscreen > h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: black;
+}
 .signbutt{
     color: white;
     /* padding: 16px 20px; */
@@ -37,9 +44,9 @@
     background-color: #1990ff;
     border: none;
     border-radius: 5px;
-    margin: 5px;
     height: 40px;
     font-weight: bold;
+    margin: 14px
 }
 @media screen and (max-width: 1050){
     .cony{
