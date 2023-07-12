@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Login from './screen/Login';
+import { Homepage, News, Cryptocurrencies, CryptoDetails} from './components';
+import Logged from './components/Logged';
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route exact path="/" element={<Login/>}/>
+      </Routes>
+      <Routes>
+      <Route exact path="/Log" element={<Logged />}>
+      <Route exact path="home" element={<Homepage />}/>
+      <Route exact path="cryptocurrencies" element={<Cryptocurrencies />}/>
+      <Route exact path="crypto/:coinId" element={<CryptoDetails />}/>
+      <Route exact path="news"element={<News />}/>
+      </Route>
+      </Routes>
+    </>
+        
+    
   );
 }
-
-export default App;
+export default Home;

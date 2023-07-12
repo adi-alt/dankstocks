@@ -1,0 +1,18 @@
+.blender{
+    background-image: linear-gradient(white,transparent);
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    top: 12vh;
+    color: white;
+    left: 0;
+}
+.adi{
+    font-size: 30px;
+    font-weight: bold;
+}
+@media screen and (max-width:800px){
+    .blender{
+        top: 10vh;
+    }
+}
