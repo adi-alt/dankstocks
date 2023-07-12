@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (screenSize <= 800) {
+    if (screenSize <= 850) {
       setActiveMenu(false);
     } else {
       setActiveMenu(true);
@@ -39,10 +39,10 @@ const Navbar = () => {
         <Button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><MenuOutlined /></Button>
       </div>
       {activeMenu && (
-        <div style={{ color: 'black' }}>
+        <div className="babu" style={{ color: 'black' }}>
           <ul>
             <li>
-              <a href="/log/home" style={{ fontSize: '2vh' }}>Homie Area</a>
+              <a href="/log/home" style={{ fontSize: '2vh' }} >Homie Area</a>
             </li>
             <li>
               <a href="/log/cryptocurrencies" style={{ fontSize: '2vh' }}>Cryptocurrencie</a>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href='/'>
-                <button onClick={()=>{window.localStorage.setItem("logout","true")}} style={{width:'130px',backgroundColor:'#1990ff',border:'none',borderRadius:'5px',height:'40px',color:'white',fontWeight:'bolder'}}>YOu WanNA Go!?</button>
+                <button onClick={()=>{window.localStorage.setItem("logout","true")}} style={{backgroundColor:'#1990ff',border:'none',borderRadius:'5px',height:'40px',color:'white',fontWeight:'bolder'}}>YOu WanNA Go!?</button>
               </a>
             </li>
           </ul>
