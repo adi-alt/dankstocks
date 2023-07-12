@@ -60,7 +60,7 @@ const Cryptocurrencies = ({ simplified }) => {
 									title={`${currency.rank}. ${currency.name}`}
 									extra={<img className="crypto-image" alt="" src={currency.iconUrl} />}
 									hoverable
-									style={{borderRadius: '10px', overflow: 'hidden'}}
+									style={{borderRadius: '10px', overflow: 'hidden',height:'230px',display:'flex',flexDirection:'column',padding:'10px'}}
 								>
 									<p>Price: ${millify(currency.price)}</p>
 									<p>Market Cap: {millify(currency.marketCap)}</p>
