@@ -19,11 +19,26 @@ function Signup(){
       console.log(authUser);
     }).catch((error)=>{
       console.log(window.localStorage.getItem("isloggedin"));
-      setErrormsg(error.message);
+      setErrormsg(helper(error.message));
       console.log(errormsg)
     });
   }
-  
+  function helper(str){
+    const n = str.length;
+    var bool = 0;
+    var temp = "";
+    for (let i = 0; i < n; i++) {
+      const ele = str[i];
+      if(bool && ele!==')')temp+=ele;
+      if(ele==='('){
+        bool = 1;
+      }
+      if(ele===')'){
+        break;
+      }
+    }
+    return temp;
+  }
     return (
       <div className='cony'>
           <div className='signscreen'>
@@ -32,7 +47,7 @@ function Signup(){
               <input placeholder="Email bruh" type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
               <input placeholder="Keep SHHH!" type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
               <button type="submit" className="signbutt">COME ONN</button>
-              <h1>{errormsg}</h1>
+              <h3>{errormsg}</h3>
           </form>
           </div>
       </div>
