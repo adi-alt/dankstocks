@@ -14,8 +14,35 @@
 .adi > a{
     color: #1990ff;
 }
-@media screen and (max-width:800px){
+.babu>ul>li>a>button{
+    width: 150px;
+}
+@media screen and (max-width:850px){
     .blender{
         top: 10vh;
+    }
+    .babu{
+        margin-top: 180px;
+        background-color: white;
+        z-index: 10000;
+        /* margin-right: 50px; */
+        padding: 0;
+        position: absolute;
+        right: 0;
+        border-radius: 10px;
+    }
+    .babu >ul >li{
+        font-size: 0rem;
+        display: block;
+        padding: 5px;
+    }
+    .babu>a{
+        font-size: 0.2rem;
+    }
+    .babu>ul>li>a>button{
+        font-size: 12px;
+        width: 100px;
+        padding: 0;
+        margin: 0;
     }
 }
