@@ -47,7 +47,7 @@ function Signup(){
               <input placeholder="Email bruh" type="email" value={email} onChange={(e)=>{setEmail(e.target.value)}}/>
               <input placeholder="Keep SHHH!" type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/>
               <button type="submit" className="signbutt">COME ONN</button>
-              <h3>{errormsg}</h3>
+              <h4>{errormsg}</h4>
           </form>
           </div>
       </div>
