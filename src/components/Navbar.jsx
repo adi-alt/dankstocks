@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href='/'>
-                <button onClick={()=>{window.localStorage.setItem("logout","true")}} style={{width:'130px',backgroundColor:'#1990ff',border:'none',borderRadius:'5px',height:'40px',color:'white'}}>YOu WanNA Go!??</button>
+                <button onClick={()=>{window.localStorage.setItem("logout","true")}} style={{width:'130px',backgroundColor:'#1990ff',border:'none',borderRadius:'5px',height:'40px',color:'white',fontWeight:'bolder'}}>YOu WanNA Go!?</button>
               </a>
             </li>
           </ul>
