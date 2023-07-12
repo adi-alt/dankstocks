@@ -11,6 +11,9 @@
     font-size: 30px;
     font-weight: bold;
 }
+.adi > a{
+    color: #1990ff;
+}
 @media screen and (max-width:800px){
     .blender{
         top: 10vh;
