@@ -11,6 +11,7 @@
     overflow-x: none;
     position: relative;
     right: 0;
+    z-index: 100;
 }
 .footerarea h1{
     color: #ffffff;
@@ -54,6 +55,7 @@
     height: 15vh;
     width: 100%;
     position: relative;
+    z-index: 100;
     /* margin-top: -110px; */
 }
 .headingm{
