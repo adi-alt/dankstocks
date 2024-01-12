@@ -1,0 +1,61 @@
+.cony{
+    display: flex;
+    height: 100vh;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+}
+.signscreen  {
+    padding: 8%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    /* height: 50vh; */
+    box-shadow: 0px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.signscreen > form{
+    display: flex;
+    flex-direction: column;
+}
+.signscreen > form > input{
+    height: 30px;
+    margin: 14px;
+    outline-width: 0;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    margin-bottom: 6px;
+    color: black;
+}
+.signscreen > h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: black;
+}
+.signbutt{
+    color: white;
+    /* padding: 16px 20px; */
+    height: 30px;
+    background-color: #1990ff;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    margin: 14px
+}
+@media screen and (max-width: 1050){
+    .cony{
+        justify-content:  end;
+    }
+}
+@media screen and (max-width: 462px){
+    .cony{
+        align-items: start;
+    }
+}
